@@ -1,7 +1,5 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:flutter/services.dart' show rootBundle;
 
 void main() {
   runApp(MyApp());
@@ -52,8 +50,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         body: Stack(
           children: [
-            /// **WebView Layer**
-            _controller != null
+             _controller != null
                 ? WebViewWidget(
                     controller: _controller!,
                   )
@@ -61,15 +58,6 @@ class _MyAppState extends State<MyApp> {
               color: Colors.red,
             ),
 
-            /// **Flutter Widgets Over WebView**
-           /* Positioned(
-              top: 50,
-              left: 20,
-              child: ElevatedButton(
-                onPressed: () => sendMessageToWebView("Hello from Flutter!"),
-                child: Text("Send to WebView"),
-              ),
-            ),*/
           ],
         ),
       ),
