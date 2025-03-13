@@ -1,6 +1,13 @@
 # holi_animation_flutter_example
 
-A new Flutter project.
+A Flutter project demonstrating animation of fluid animation of Holi colors in mobile app.
+
+
+## Screenshot
+
+![Holi Animation Preview](holi_animation_flutter_example.gif)
+
+
 
 ## Getting Started
 
